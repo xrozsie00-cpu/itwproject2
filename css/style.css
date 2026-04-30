@@ -213,7 +213,7 @@ header h1 {
 #education h3 {
     font-weight: normal;
     margin: 0;
-    font-size: clamp(24px, 6cqi, 36px);
+    font-size: clamp(18px, 6cqi, 36px);
 }
 
 #education .paragraph {
