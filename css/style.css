@@ -100,14 +100,24 @@ header {
     align-items: center;        
     justify-content: flex-start;
     height: 100vh;             
-    padding-left: 15%;
+    padding-left: 10%;
+    gap: 20%;
 }
 
 header h1 {
     font-weight: normal;
     font-size: clamp(24px, 6vw, 100px);
+    white-space: nowrap;
 }
 
+#luffy-bg {
+    flex-shrink: 1;     
+    min-width: 0;       
+    width: 65vh;
+    mix-blend-mode: multiply;
+    filter: grayscale(100%);
+    aspect-ratio: 3 / 4;
+}
 
 /* ABOUT */
 
@@ -588,6 +598,30 @@ header h1 {
 }
 
 @media only screen and (max-width: 562px) {
+    
+    #h1 {
+        display: flex;
+        align-items: center;        
+        justify-content: flex-end;
+        flex-direction: column;
+        height: 100vh;
+        padding-left: 0;             
+        gap: 10%;
+        align-items: left;
+    }
+
+    #h1 h1 {
+        align-self: flex-start;
+        padding-left: 30px;
+    }
+
+    #h1 #luffy-bg {
+        width: auto;
+        height: auto;
+        max-height: 50vh;
+        align-self: flex-end;
+    }
+
     #hobbies .card {
         flex: 1 1 100%;
         max-width: 200px;
