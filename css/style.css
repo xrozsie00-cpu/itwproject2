@@ -2,6 +2,12 @@
 
 /* BODY */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -61,12 +67,13 @@ h3 {
 #nav {
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0; 
     z-index: 999;
     background-color: rgb(238, 198, 150);
     font-weight: bold;
     width: 100%;
-    box-sizing: border-box;
-   
+    padding-bottom: 20px;
 }
 
 #nav ul {
@@ -74,6 +81,7 @@ h3 {
     list-style-type: none;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
 }
 
 #nav li {
@@ -370,7 +378,7 @@ header h1 {
 /* SOCIALS */
 
 #contact {
-    min-height: 80vh;
+    min-height: calc(100vh - 60px);
 }
 
 #contact h2 {
@@ -382,7 +390,6 @@ header h1 {
 #contact .paragraph {
     grid-column: 2 / 12;
     grid-row: 2;
-    margin-bottom: 30px;
 }
 
 #contact #socials {
@@ -399,7 +406,6 @@ header h1 {
 #contact i {
     font-size: clamp(64px, 12vw, 200px);
 }
-
 
 /* FOOTER */
 
